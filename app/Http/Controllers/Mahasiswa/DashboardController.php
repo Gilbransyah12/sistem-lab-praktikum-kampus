@@ -46,8 +46,5 @@ class DashboardController extends Controller
         return view('mahasiswa.dashboard', $data);
     }
 
-    public function sertifikat()
-    {
-        return view('mahasiswa.sertifikat.index');
-    }
+
 }

@@ -21,6 +21,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+// Public Verification Route
+Route::get('/verifikasi/sertifikat/{kode}', [App\Http\Controllers\VerifikasiController::class, 'check'])->name('verifikasi.check');
+
 /*
 |--------------------------------------------------------------------------
 | Authentication Routes

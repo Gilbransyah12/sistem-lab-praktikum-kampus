@@ -42,4 +42,8 @@ Route::get('/absensi', [Admin\AbsensiController::class, 'index'])->name('absensi
 Route::get('/absensi/sesi/{sesi}', [Admin\AbsensiController::class, 'show'])->name('absensi.show');
 Route::get('/absensi/laporan', [Admin\AbsensiController::class, 'laporan'])->name('absensi.laporan');
 Route::get('/absensi/export', [Admin\AbsensiController::class, 'export'])->name('absensi.export');
-Route::get('/absensi/pdf', [Admin\AbsensiController::class, 'pdf'])->name('absensi.pdf');
+
+// Sertifikat
+Route::post('/pendaftaran/{id}/generate-sertifikat', [Admin\CertificateController::class, 'generate'])->name('pendaftaran.generate-sertifikat');
+Route::get('/sertifikat/{id}/print', [Admin\CertificateController::class, 'print'])->name('sertifikat.print');
+

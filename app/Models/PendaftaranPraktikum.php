@@ -98,4 +98,9 @@ class PendaftaranPraktikum extends Model
             'id'
         );
     }
+
+    public function sertifikat()
+    {
+        return $this->hasOne(Sertifikat::class, 'pendaftaran_id');
+    }
 }

@@ -35,4 +35,5 @@ Route::get('/kartu-kontrol/{pendaftaran}/{jadwal?}', [Mahasiswa\KartuKontrolCont
 Route::get('/kartu-kontrol/{pendaftaran}/{jadwal}/pdf', [Mahasiswa\KartuKontrolController::class, 'exportPdf'])->name('kartu-kontrol.pdf');
 
 // Sertifikat
-Route::get('/sertifikat', [Mahasiswa\DashboardController::class, 'sertifikat'])->name('sertifikat.index');
+Route::get('/sertifikat', [Mahasiswa\SertifikatController::class, 'index'])->name('sertifikat.index');
+Route::get('/sertifikat/{id}/print', [Mahasiswa\SertifikatController::class, 'print'])->name('sertifikat.print');

@@ -3,11 +3,28 @@
 @section('title', 'Detail Pendaftaran')
 
 @section('content')
-<div class="page-header">
+<div class="page-header" style="display: flex; justify-content: space-between; align-items: center;">
     <a href="{{ route('admin.pendaftaran.index') }}" class="btn btn-secondary btn-sm">
         <i class="fas fa-arrow-left"></i>
         <span>Kembali</span>
     </a>
+
+    @if($pendaftaran->status === 'diterima')
+        <div>
+            @if($pendaftaran->sertifikat)
+                <a href="{{ route('sertifikat.print', $pendaftaran->sertifikat->id) }}" target="_blank" class="btn btn-success btn-sm" style="background-color: #0d9488; color: white; border: none;">
+                    <i class="fas fa-print"></i> Cetak Sertifikat
+                </a>
+            @else
+                <form action="{{ route('pendaftaran.generate-sertifikat', $pendaftaran->id) }}" method="POST" style="display:inline;">
+                    @csrf
+                    <button type="submit" class="btn btn-primary btn-sm" style="background-color: #0f172a; color: white; border: none;">
+                        <i class="fas fa-certificate"></i> Generate Sertifikat
+                    </button>
+                </form>
+            @endif
+        </div>
+    @endif
 </div>
 
 <!-- Status Update Card -->
