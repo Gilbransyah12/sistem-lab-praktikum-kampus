@@ -1,0 +1,67 @@
+.datatable-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.show-entries label,
+.search-wrapper label {
+    font-size: 0.8125rem;
+    color: #475569;
+}
+
+.entries-select,
+.search-input {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.8125rem;
+    margin: 0 0.5rem;
+}
+
+.btn-add-jadwal {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.btn-refresh-jadwal {
+    background: #9c27b0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.data-table th i {
+    font-size: 0.625rem;
+    margin-left: 0.25rem;
+    color: #94a3b8;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.badge-info {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
