@@ -114,7 +114,7 @@
                 <div class="jadwal-content">
                     <h4>{{ $j->praktikum->nama_praktikum ?? '-' }} / <span style="font-weight: 500; font-size: 0.9em; color: #64748b;">{{ $j->mata_kuliah ?? '-' }}</span></h4>
                     <div class="jadwal-meta">
-                        <span><i class="fas fa-layer-group"></i> {{ $j->kelas->nama_kelas ?? '-' }}</span>
+                        <span><i class="fas fa-layer-group"></i> {{ $j->kelas->nama_kelas ?? '-' }} - {{ $j->mata_kuliah ?? '-' }}</span>
                         <span><i class="fas fa-clock"></i> {{ $j->hari }}, {{ $j->jam_mulai }} - {{ $j->jam_selesai }}</span>
                         <span><i class="fas fa-door-open"></i> {{ $j->ruangan->nama_ruangan ?? '-' }}</span>
                     </div>

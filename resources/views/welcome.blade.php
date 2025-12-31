@@ -272,13 +272,7 @@
                 @endauth
             </div>
             
-            <!-- Scroll Indicator -->
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 fade-in delay-400">
-                <a href="#features" class="flex flex-col items-center gap-2 text-white/50 hover:text-white/80 transition-colors">
-                    <span class="text-xs font-medium">Scroll ke bawah</span>
-                    <i class="fas fa-chevron-down animate-bounce"></i>
-                </a>
-            </div>
+
         </div>
         
 

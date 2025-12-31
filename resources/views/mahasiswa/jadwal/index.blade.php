@@ -47,7 +47,11 @@
         
         <div class="jadwal-body">
             <h3 class="jadwal-title">{{ $j->praktikum->nama_praktikum ?? '-' }}</h3>
-            <p class="jadwal-kelas">{{ $j->kelas->nama_kelas ?? '-' }}</p>
+            <p class="jadwal-kelas">
+                {{ $j->kelas->nama_kelas ?? '-' }}
+                <span style="color: #cbd5e1; margin: 0 0.5rem;">|</span>
+                <span style="color: #0f766e; font-weight: 700;">{{ $j->mata_kuliah ?? '-' }}</span>
+            </p>
             
             <div class="jadwal-info">
                 <div class="info-item">

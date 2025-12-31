@@ -543,18 +543,28 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .welcome-card {
+        padding: 1.5rem;
+    }
+
     .welcome-content {
         flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .welcome-actions {
-        justify-content: center;
+        display: none;
     }
     
+    .welcome-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     .welcome-text p {
-        margin: 0 auto 2rem;
+        margin: 0;
+        font-size: 0.9rem;
     }
     
     .list-item {
@@ -569,6 +579,12 @@
     
     .item-status {
         align-self: flex-start;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
     }
 }
 

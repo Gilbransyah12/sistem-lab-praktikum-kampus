@@ -434,6 +434,26 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .card-title {
+        justify-content: center;
+    }
+
+    .header-actions {
+        width: 100%;
+    }
+
+    .header-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
     .card-filter {
         flex-direction: column;
         align-items: stretch;

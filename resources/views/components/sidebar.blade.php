@@ -168,8 +168,7 @@
     
     <!-- Sidebar Footer -->
     <div class="sidebar-footer">
-        {{-- Logout Button (shows on mobile) --}}
-        @if($role === 'mahasiswa')
+        {{-- Logout Button --}}
         <form action="{{ route('logout') }}" method="POST" class="sidebar-logout-form">
             @csrf
             <button type="submit" class="sidebar-logout-btn">
@@ -177,7 +176,6 @@
                 <span>Logout</span>
             </button>
         </form>
-        @endif
         <div class="version-badge">
             <i class="fas fa-code-branch"></i>
             <span>v1.0.0</span>
